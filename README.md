@@ -1,5 +1,5 @@
 # SeleniumPythonDashboard
-This script does sanity test of the page and make sure that the critical functionality is not broken
+This script does sanity test of the page and make sure that the critical functionality is not broken and throws an assertion error
 
 # Test scenarios
 1.Kyc check
