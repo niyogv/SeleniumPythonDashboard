@@ -1,5 +1,5 @@
 # SeleniumPythonDashboard
-This script does sanity test of the page and make sure that the critical functionality is not broken and throws an assertion error if any page is broken 
+This script does sanity test of the page and make sure that the critical functionality is not broken and throws an assertion error if any page is broken, here the values for pages like edit profile, update profile, edit bio, update bio is automatically generated and assigned
 
 # Sanity Test
 1.Kyc check
