@@ -13,3 +13,5 @@ This script does sanity test of the page and make sure that the critical functio
 5.Update bio
 
 6.Checks for social links
+
+7.Triggers the github actions if anything pushing to main branch
