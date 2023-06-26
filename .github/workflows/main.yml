@@ -26,8 +26,8 @@ jobs:
       - name: chmod
         run: chmod +x chromedriver
       - name: Run tests
-       # env: |
-        #  URL: ${{ secrets.URL }}
-         # USERNAME: ${{secrets.USERNAME}}
-          #PASSWORD: ${{secrets.PASSWORD}}
+        env: |
+          url: ${{ secrets.URL }}
+          username: ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
         run: pytest test_digitalme.py
