@@ -14,8 +14,8 @@ chrome_options=Options()
 chrome_options.add_argument('--headless')
 
 # login cred
-username = os.environ('USERNAME')
-password = os.environ('PASSWORD')
+username = os.environ.get('USERNAME')
+password = os.environ.get('PASSWORD')
 
 class Test_dashboard:
 
