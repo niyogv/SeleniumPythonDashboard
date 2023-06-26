@@ -1,3 +1,4 @@
+import os
 import time
 import random
 import string
@@ -7,8 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 # login cred
-username='qzbiy'
-password='9dQnG}>5X.'
+username = os.environ.get('USERNAME')
+password = os.environ.get('PASSWORD')
 
 class Test_dashboard:
 
