@@ -3,6 +3,7 @@ name: CI FOR DASHBOARD
 on:
   push:
     branches: main
+  workflow_dispatch:
     
 jobs:
   test:
