@@ -6,6 +6,12 @@ import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
+
+#Running chrome in headless mode
+url = os.environ['URL']
+chrome_options=Options()
+chrome_options.add_argument('--headless')
 
 # login cred
 username = os.environ.get('USERNAME')
@@ -15,8 +21,8 @@ class Test_dashboard:
 
     @pytest.fixture()
     def test_invoke(self):
-        self.driver=webdriver.Chrome()
-        self.driver.get('https://qadashboard.iome.ai')
+        self.driver=webdriver.Chrome(options=chrome_options)
+        self.driver.get(url)
         self.driver.maximize_window()
         time.sleep(1)
         self.driver.find_element(By.XPATH, '//button').click()
