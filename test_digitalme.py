@@ -7,8 +7,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 # login cred
-username=''
-password=''
+username='qzbiy'
+password='9dQnG}>5X.'
 
 class Test_dashboard:
 
